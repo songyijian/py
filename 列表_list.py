@@ -1,4 +1,4 @@
-
+#!/usr/local/bin/python3
 # -*- coding: UTF-8 -*-
 
 # 列表 list
