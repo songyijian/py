@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 # -*- coding: UTF-8 -*-
 
 # 判断 if
@@ -37,7 +38,15 @@ e = True
 
 # 或者 or
 
-if b or e:
-  print('其中之一是对的都回放行')
-else:
-  print('你们里面没有一个是对的')
+# if b or e:
+#   print('其中之一是对的都回放行')
+# else:
+#   print('你们里面没有一个是对的')
+
+
+
+# pass
+# if 1:
+#   pass #这里没有pass就会报错
+# else:
+#   print('yy')

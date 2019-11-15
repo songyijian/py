@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 # -*- coding: UTF-8 -*-
 
 # while在...期间 | loop环
@@ -52,4 +53,4 @@ dicts = {
 # print(range(10, 20))  # [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
 
 # 返回指定递增指数list
-print(range(10, 20, 2))  # [10, 12, 14, 16, 18]
+# print(range(10, 20, 2))  # [10, 12, 14, 16, 18]
