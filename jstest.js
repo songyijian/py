@@ -38,22 +38,21 @@
 
 
 // 引用类型会修改外部对象
-function tfn(a){
-  a['x'] = 100 
-  console.log(a);
-}
+// function tfn(a){
+//   a['x'] = 100 
+//   console.log(a);
+// }
 
-var a = {'x':1}
-tfn(a)
-console.log(a);
+// var a = {'x':1}
+// tfn(a)
+// console.log(a);
 
 
 
 
 // 异常捕获
 // try {
-  
 // } catch (error) {
   // err 是一个error对象
-  
 // }
+

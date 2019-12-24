@@ -15,6 +15,7 @@
 
 # 构造函数 self只是一个
 # class Tfn:
+#   # 默认执行__init__（构造函数）第一个参数永远是self = this
 #   def __init__(self, *args, **json):
 #     print(args)
 #     print(json)
@@ -42,6 +43,22 @@
 # # print(f'my: {p.__name} - {p.age} - {p.sex}')
 # print(f'my: {p.get_name()} - {p.age} - {p.sex}')
 
+
+class Item:
+    def __init__(self, *args):
+        print('Item 的构造函数，初始化就会被调用，首参永远是self = this')
+        self.name = args[0]["name"]
+        self.__age = args[0]["age"]  # 私有属性
+
+    def getname(self):
+        print('Item 的类函数，首参永远是self')
+        print(f'我是item的 {self.name} , 现在已经 {self.__age}')
+
+
+i = Item({"name": '小花', "age": 18})
+i.getname()  # 我是item的 小花
+print(i.name)  # 小花
+print(i.age, i.__age)  # 私有属性不能被访问
 
 
 
